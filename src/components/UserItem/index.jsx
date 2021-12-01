@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import styles from './UserItem.module.scss';
 
 const UserItem = (props) => {
 
     const {user} = props;
 
     return (
-        <li>
+        <li className={styles.item}>
             <div>
                 <img src={user.picture.medium} alt='user_photo'/>
             </div>
